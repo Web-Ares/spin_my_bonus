@@ -76,7 +76,11 @@ if(page === 'play'){
 var sidebar_casinos_ini = $('.ajax_aside_block').html();
 
 $(function(){
-    
+
+    $('.casino-review ').each(function() {
+        CasinoReview($(this));
+    });
+
     /* INITIALIZATION */
     $('.scroll-top').on({
         'click':function(){
@@ -453,6 +457,55 @@ $(function(){
     });
 });
 
+var CasinoReview = function(obj) {
+
+    //private properties
+    var _obj = obj,
+        _tabs = _obj.find('.casino-review__link-item'),
+        _wraps = _obj.find('.casino-review__content-item'),
+        _content = _obj.find('.casino-review__content'),
+        i = 0;
+
+    //private methods
+    var _addEvents = function() {
+            showPages = function(i) {
+                _wraps.removeClass("active");
+                setTimeout( function() {
+                    _wraps.hide();
+                    _wraps.eq(i).show();
+                }, 300)
+                _wraps.eq(i).addClass('active');
+                _tabs.removeClass("active");
+                _tabs.eq(i).addClass("active");
+
+                var _wrapsactive = _obj.find('.tabs__content > div.active');
+
+                console.log(_wrapsactive.height());
+                _content.animate({height: _wrapsactive.height()}, 300)
+            };
+
+            showPages(0);
+
+            _tabs.each(function(index, element) {
+                $(element).attr("data-page", i);
+                i++;
+            });
+
+            _tabs.click(function() {
+                showPages(parseInt($(this).attr("data-page")));
+                return false;
+            });
+        },
+        _init = function() {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
 
 function checkNextResultsAvail(){
     $.ajax({
