@@ -5784,6 +5784,15 @@ span.close_google:hover{
 }
 /*----------------/contact-us--------------------*/
 
+/* ------------- casino-review --------------- */
+.casino-review{
+
+}
+.casino-review__content-item{
+    display: none;
+}
+/* ------------- /casino-review --------------- */
+
 @media (min-width: 768px){
     
     .google_res_wrap{
