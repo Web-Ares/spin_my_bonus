@@ -5754,6 +5754,9 @@ span.close_google:hover{
     -moz-box-shadow: 0 -2px 0 #001a3b;
     box-shadow: 0 -2px 0 #001a3b;
 }
+.contact-us__form .btn:hover:before{
+    display: block;
+}
 .contact-us__form .btn:after{
     position: absolute;
     right: 10px;
