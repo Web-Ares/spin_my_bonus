@@ -5789,10 +5789,45 @@ span.close_google:hover{
 
 /* ------------- casino-review --------------- */
 .casino-review{
-
+    margin-top: 25px;
+    background: #001e47;
 }
-.casino-review__content-item{
-    display: none;
+.casino-review .head-caption.main-title {
+    height: 71px;
+    padding: 7px 10px 10px;
+    margin-bottom: 0!important;
+    font-size: 22.5px !important;
+    letter-spacing: 0;
+    line-height: 55px;
+}
+.casino-review__link{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-content: stretch;
+    -webkit-align-content: stretch;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.casino-review__link-item{
+    margin: 0 4px;
+    padding: 7px 4px 2px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #001738;
+    transition: translateZ(0);
+    -webkit-transition: translateZ(0);
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+.casino-review__link-item_active{
+    background-color: #de0000;
+}
+.casino-review__content{
+    background-color: #001e47;
 }
 /* ------------- /casino-review --------------- */
 
