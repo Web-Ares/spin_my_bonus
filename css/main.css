@@ -422,10 +422,28 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #1f3e5a;
+    color: #bfbfbf;
+    font-style: italic;
+    font-size: 14px;
 }
 :-moz-placeholder {
-    color: #1f3e5a;
+    color: #bfbfbf;
+    font-style: italic;
+    font-size: 14px;
+}
+.placeholder {
+    color: #bfbfbf;
+    font-style: italic;
+    font-size: 14px;
+}
+.contact-us ::-webkit-input-placeholder {
+    font-size: 21px;
+}
+.contact-us :-moz-placeholder {
+    font-size: 21px;
+}
+.contact-us .placeholder {
+    font-size: 21px;
 }
 .at-follow-label{
     color: #fff;
@@ -434,9 +452,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .info_link{
     color: #fff;
     text-decoration: underline;
-}
-.placeholder {
-    color: #1f3e5a;
 }
 .logo_wrap{
     -moz-border-radius: 30px;
@@ -473,22 +488,6 @@ input[type="search"]::-webkit-search-cancel-button {
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
-
-.contact-us ::-webkit-input-placeholder {
-    color: #bfbfbf;
-    font-style: italic;
-    font-size: 21px;
-}
-.contact-us :-moz-placeholder {
-    color: #bfbfbf;
-    font-style: italic;
-    font-size: 21px;
-}
-.contact-us .placeholder {
-    color: #bfbfbf;
-    font-style: italic;
-    font-size: 21px;
-}
 /* --------------- /placeholder --------------- */
 /* Alternative pagination styles */
 .block{
@@ -800,11 +799,11 @@ span.close_google:hover{
 }
 .btn_green {
     background: #29a00d;
-    background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, #128c00 4px, #128c00 8px);
+    background-image: repeating-linear-gradient(#128c00 4px, #128c00 8px);
 }
 .btn_grey {
     background: #a4a5a6;
-    background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, #98999a 4px, #98999a 8px);
+    background-image: repeating-linear-gradient(#98999a 4px, #98999a 8px);
 }
 .btn_grey2:before,
 .btn_grey:before{
@@ -967,7 +966,7 @@ span.close_google:hover{
     z-index: 2;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 94px;
+    margin-top: 85px;
     text-align: justify;
     background: #01152d;
     box-shadow: 0 0 40px 19px rgba(3, 19, 32, 0.7);
@@ -1237,7 +1236,7 @@ span.close_google:hover{
     color: #e5e5e5;
     font-size: 20px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0.2px;
     line-height: 27px;
     margin: 16px 0 15px 0;
     text-transform: uppercase;
@@ -1532,7 +1531,19 @@ span.close_google:hover{
     max-height: 328px;
     overflow: hidden;
 }
+.site__bonus-title{
+    background: #0043a5;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    color: #e5e5e5;
+}
 /* --------------- /site --------------- */
+
+.casino-bonuses__elems:first-child {
+    width: 100%;
+}
 
 /* -------------- wrapper --------------- */
 .wrapper {
@@ -2311,7 +2322,7 @@ span.close_google:hover{
 .head-caption.main-title{
     font-size: 15px !important;
     margin-top: 0;
-    margin-bottom: 10px!important;
+    margin-bottom: 0!important;
 }
 .head-caption{
     margin-bottom: 0 !important;
@@ -2325,7 +2336,7 @@ span.close_google:hover{
     background: linear-gradient(to bottom, rgba(4,69,161,1) 0%,rgba(3,65,150,1) 15%,rgba(2,60,134,1) 27%,rgba(4,58,132,1) 31%,rgba(3,41,86,1) 65%,rgba(4,36,74,1) 77%,rgba(16,32,65,1) 81%,rgba(34,28,54,1) 85%,rgba(65,23,43,1) 92%,rgba(98,17,32,1) 100%);
     border-bottom: 3px solid #be0000;
     color: #e5e5e5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 34px;
     text-transform: uppercase;
     text-shadow: 2px 2px 3px #000000;
@@ -3018,7 +3029,6 @@ span.close_google:hover{
     font-size: 12px;
     color: #bfbfbf;
     margin: 0 0 23px 13px;
-    padding-top: 15px;
 }
 .site__menu .breadcrumbs{
     margin: 0 0 21px 13px;
@@ -3404,7 +3414,12 @@ span.close_google:hover{
 .icons_costa_rica{background-position: -272px -204px;}
 .icons_costa_rica_bw{background-position: -272px -429px;}
 /*-------------- /icons -----------------*/
-
+.icons_british{
+    width: 32px;
+    height: 24px;
+    background: url("../img/flag.png") no-repeat center;
+    background-size: contain;
+}
 /* ------------- make-choice --------------- */
 .make-choice{
     background: #032954;
@@ -3560,7 +3575,11 @@ span.close_google:hover{
 .casino-bonuses{
     position: relative;
     text-align: left;
-    margin: 0 0 56px;
+    margin: 0 0 53px;
+    color: #bfbfbf;
+}
+.casino-bonuses a{
+    color: #bfbfbf;
 }
 .casino-bonuses__date-items{
     margin: 0 0 23px;
@@ -3588,13 +3607,14 @@ span.close_google:hover{
     position: relative;
     margin: 0 0 26px;
     padding: 3px 5px 7px 3px;
-    background: #5882b8;
+    background: #032347;
     border-radius: 10px 15px 10px 15px;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
 }
 .casino-bonuses__items>div{
-    background: #c2c9d2;
+    background: #032347;
+    border: 3px solid #032954;
     border-radius: 10px;
 }
 .casino-bonuses__items:active,
@@ -3607,7 +3627,7 @@ span.close_google:hover{
 
 .casino-bonuses__head{
     position: relative;
-    padding: 8px 0 35px 13px;
+    padding: 13px 0 0 0;
 /*    cursor: pointer;*/
 }
 .casino-bonuses__head>div{
@@ -3617,31 +3637,34 @@ span.close_google:hover{
 .casino-bonuses__elems{
     display: inline-block;
     vertical-align: top;
-    width: 37%;
-    text-align: right;
+    width: 48%;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.casino-bonuses_code {
+    width: 43%;
+    margin-left: 6%;
+    padding-bottom: 15px;
 }
 .casino-bonuses__elems:first-child{
     width: 60%;
     text-align: left;
 }
-.casino-bonuses__head .location{
+.casino-bonuses__head .location {
     position: absolute;
-    top: 22px;
-    left: 14px;
+    top: 26px;
+    right: 4px;
 }
 .casino-bonuses__logo{
     overflow: hidden;
-    margin: 0 12px 12px 0;
-    height: 90px;
-    padding: 8px 0 0 39px;
+    height: 86px;
 }
 .casino-bonuses__logo>div{
     height: 100%;
 }
 .casino-bonuses__logo>div img{
-/*    height: 71%;*/
-    width: auto;
-    max-width: 100%;
+    width: 125px;
+    height: 76px;
 }
 .casino-bonuses__open{
     text-indent: -5000px;
@@ -3683,20 +3706,33 @@ span.close_google:hover{
 }
 .casino-bonuses__code{
     font-size: 14px;
-    color: #666666;
     font-weight: bold;
     display: block;
+}
+.casino-bonuses__code span{
+    display: block;
+    padding: 6px 0;
+    margin: 6px 0 23px;
+    border: 2px dashed #662e43;
+    border-radius: 5px;
+    font-size: 18px;
 }
 .casino-bonuses__name{
     font-size: 18px;
     font-weight: bold;
-    color: #0165a6;
     display: block;
     margin: 0 0 7px;
+    line-height: 24px;
+}
+.casino-bonuses__name span{
+    display: block;
 }
 .casino-bonuses__amount{
-    margin: 0 85px 0 0;
+    padding: 0 40px 6px 6px;
+    margin-bottom: 22px;
     min-width: 158px;
+    border-bottom: 2px solid #032246;
+    box-shadow: 0 1px 2px #021832;
 }
 .casino-bonuses__btn{
     min-width: 58px;
@@ -3709,21 +3745,38 @@ span.close_google:hover{
 }
 .casino-bonuses__btn .btn_green,
 .casino-bonuses__btn .btn_grey{
-    width: 100px;
+    width: 100%;
     height: 40px;
-    text-transform: uppercase;
     text-align: center;
     margin: 0 7px 11px 0;
     font-size: 16px;
     line-height: 17px;
 }
 .casino-bonuses__btn .btn_green{
+    text-transform: uppercase;
     padding: 14px 0;
     white-space: nowrap;
 }
 .casino-bonuses__btn .btn_grey{
-    padding: 5px 0;
+    padding: 4px 0;
     color: #404040;
+    font-size: 14px;
+}
+.casino-bonuses__btn .btn_grey div:last-child{
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    color: #003b90;
+}
+.casino-bonuses__btn .btn_grey div:last-child:before{
+    position: absolute;
+    width: 15px;
+    height: 12.5px;
+    top: 3px;
+    left: -10px;
+    background: url("../img/mail.png")no-repeat center;
+    background-size: contain;
+    content: "";
 }
 .casino-bonuses__review span{
     border-bottom: 1px solid transparent;
@@ -3734,55 +3787,83 @@ span.close_google:hover{
     border-bottom-color: #0045a1;
 }
 .casino-bonuses__assessment{
-    color: #404040;
-    font-size: 17px;
-    padding: 0 0 40px 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding: 3px 0 15px 0;
     font-weight: bold;
     position: relative;
-    border-top: 1px solid #999999;
-    box-shadow: 0 1px 0 0 #d4d8dc inset;
-/*    display: none;*/
+    border-top: 2px solid #032246;
+    box-shadow: 0 -1px 2px #021832;
 }
 .casino-bonuses__assessment h3{
     font-size: 14px;
     font-weight: 800;
     margin: 0 0 9px;
 }
-.casino-bonuses__assessment dl{
-    border-top: 1px solid #d9d9d9;
-    padding: 9px 8px 8px 14px;
+.casino-bonuses__items dl{
+    padding: 0 7px 0 3px;
     margin: 0 5px;
+    color: #bfbfbf;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
 }
-.casino-bonuses__assessment div dl:first-child{
-    border-top: none;
-}
-.casino-bonuses__assessment dt,
-.casino-bonuses__assessment dd{
+.casino-bonuses__items dt,
+.casino-bonuses__items dd{
     display: inline-block;
     vertical-align: top;
-    width: 170px;
-    padding: 0 20px 0 0;
+    width: 47%;
+    padding:0;
 }
-.casino-bonuses__assessment dd{
-    width: 346px;
+.casino-bonuses__items dt{
+    font-weight: bold;
+}
+.casino-bonuses__items dd{
+    width: 51%;
     padding: 0;
-    font-size: 16px;
-    color: #666;
+    font-size: 15px;
 }
-.casino-bonuses__assessment dd a{
-    color: #0165A6;
-}
-.casino-bonuses__assessment dd a:hover{
+.casino-bonuses__items dd a{
+    display: block;
+    color: #50b8e1;
     text-decoration: underline;
+    line-height: 25px;
+}
+.casino-bonuses__items dd a:hover{
+    text-decoration: none;
+}
+.casino-bonuses__elems dl{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.casino-bonuses__elems dt{
+    display: block;
+    width: inherit;
+    padding: 0;
+}
+.casino-bonuses__elems dd{
+    width: inherit;
+}
+.casino-bonuses__elems dd a{
+    display: block;
+}
+.casino-bonuses__text{
+    padding: 12px 10px 38px;
+    border-top: 2px solid #032246;
+    box-shadow: 0 -1px 2px #021832;
+    font-size: 13px;
+    line-height: 20px;
 }
 .dd_valid_casinos{
-    margin-top: 10px;
+
 }
 .casino-bonuses__valid{
     margin: 6px 0 0;
 }
 .casino-bonuses__valid:first-child{
-    margin-top: 0;
+    margin-top: 2px;
 }
 .casino-bonuses__valid span{
     display: inline-block;
@@ -3814,19 +3895,19 @@ span.close_google:hover{
 .casino-bonuses__likes{
     display: block;
     background: url("../img/like-block.png") no-repeat center center;
-    width: 185px;
-    height: 39px;
+    width: 246px;
+    height: 46px;
     position: absolute;
     bottom: -8px;
     left: 50%;
-    margin-left: -91px;
-    padding: 4px 30px 3px 29px;
+    margin-left: -123px;
+    padding: 4px 20px 3px 20px;
     text-align: center;
     background-size: 100% 100%;
 }
 .casino-bonuses__likes input{
-    width: 42px;
-    height: 19px;
+    width: 77px;
+    height: 33px;
     border: none;
     background: #d9d9d9;
     box-shadow: 4px 4px 5px -3px rgba(0,0,0,0.4) inset;
@@ -3854,7 +3935,7 @@ span.close_google:hover{
     width: 31px;
     height: 31px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     border-radius: 100%;
     text-indent: -5000px;
     background: url("../img/likes.png") no-repeat;
@@ -4339,14 +4420,20 @@ span.close_google:hover{
 }
 .comments {
     margin-top: 40px;
+    padding: 25px 11px 13px;
     text-align: left;
+    background: #011e48;
 }
 .comments h3 {
     display: block;
-    border-bottom: 1px solid #000;
-    padding: 0 0 12px 0;
+    padding-bottom:14px;
     font-size: 18px;
+    line-height: 22px;
     text-transform: uppercase;
+}
+.comments h3 span{
+    display: block;
+    color:#afafb0;
 }
 .comments dl {
     display: block;
@@ -4434,7 +4521,7 @@ span.close_google:hover{
     font-size: 14px;
 }
 .comments .add_comment_wrap {
-    padding: 0 9px 81px;
+    padding: 0 0 61px;
 }
 .comments .add_comment_wrap span {
     display: block;
@@ -4447,50 +4534,34 @@ span.close_google:hover{
     box-shadow: 0 1px 0 #022c46;
 }
 .add_comment_inner {
-    padding-top: 27px;
-    width: 100%;
+
 }
-.comments .add_comment_wrap input {
+.comments .add_comment_wrap input,
+.comments .add_comment_wrap textarea{
     display: inline-block;
-    height: 48px;
-    font-size: 14px;
-    padding: 0 4px 0 9px;
-    color: #1f3e5a;
-    font-style: italic;
-    border: 1px solid #1f3e5a;
-    background: #BAC7D7;
-    text-transform: uppercase;
-    box-shadow: inset 0 1px 2px #000510;
-    margin-bottom: 15px;
-    max-width: 100%;
+    vertical-align: top;
     width: 100%;
+    height: 30px;
+    margin-bottom: 22px;
+    padding: 0 10px;
+    border: 2px solid #00588f;
+    font-size: 14px;
+    line-height: 15px;
+    color: #bfbfbf;
+    background: #002555;
+    box-shadow: inset 1px 1px 2px #002e5a;
 }
 .comments .add_comment_wrap input:focus {
-    background: #e6e6e6;
-}
-.comments .add_comment_wrap input[type="email"] {
-    margin-right: 0;
-    max-width: 100%;
-    float: none;
-    width: 100%;
+    background: #00588f;
 }
 .comments .add_comment_wrap textarea {
-    display: block;
-    width: 100%;
-    height: 118px;
-    font-size: 14px;
-    padding: 16px 4px 0 9px;
-    color: #1f3e5a;
-    font-style: italic;
-    border: 1px solid #1f3e5a;
-    background: #BAC7D7;
-    text-transform: uppercase;
-    box-shadow: inset 0 1px 2px #000510;
-    resize: vertical;
-    margin-bottom: 16px;
+    height: 140px;
+    padding: 7px 0 0 10px;
+    margin-bottom: 28px;
+    overflow: hidden;
 }
 .comments .add_comment_wrap textarea:focus {
-    background: #e6e6e6;
+    background: #00588f;
 }
 .comments__choose {
     margin: 0 0 39px 0;
@@ -4510,18 +4581,21 @@ span.close_google:hover{
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    width: 61px;
-    height: 61px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid transparent;
-    text-indent: -1000px;
-    background-size: 45px 45px;
+    background-size: 40px 40px;
     -webkit-transition: border 0.3s ease;
     transition: border 0.3s ease;
     position: relative;
+    text-align: center;
+    padding-top: 57px;
+    margin-right: 16px;
+    font-size: 15px;
 }
-.comments__choose div:before {
+/*.comments__choose div:before {
     content: '';
     width: 0;
     height: 0;
@@ -4558,7 +4632,7 @@ span.close_google:hover{
 }
 .comments__choose div:hover:after {
     display: block;
-}
+}*/
 .positive {
     background: url('../img/icon-positive.png') no-repeat center;
 }
@@ -4602,16 +4676,9 @@ span.close_google:hover{
     color: #5a0200;
 }
 .add_comment {
-    border: none;
-    padding: 0 10px;
-    margin: 0;
-    width: 100%;
-    height: 35px;
+    position: absolute !important;
+    right: 19px;
 }
-.add_comment div{
-    margin: 10px auto;
-    width: 100px;
-    }
 .submit_score{
     display: block;
     width: 70%;
@@ -4623,6 +4690,49 @@ span.close_google:hover{
     width: 95px;
     margin: 7px auto;
 }
+.comments__all-name{
+    padding-left: 50px;
+    margin-bottom: 17px;
+}
+.comments__all-name span{
+    color: #50b8e1;
+}
+.comments__all-choose{
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+.comments__all-choose span{
+    display: block;
+    position: absolute;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+    background-size: 40px 40px;
+}
+.comments__all p{
+    letter-spacing: -0.5px;
+}
+.comments__all-item{
+    position: relative;
+    padding: 19px 15px 13px;
+    margin-bottom: 8px;
+    border: 2px solid #01598f;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+.comments .btn{
+    width: 176px;
+    height: 33px;
+    padding-left: 6px;
+    line-height: 22px;
+    font-size: 15px;
+    letter-spacing: -1.2px;
+}
+.comments .btn:after{
+    right: 8px;
+    top: 8px;
+    background-size: 13px 10.5px;
+}
 /* --------------- /comments --------------- */
 
 /* ------------- breadcrumbs --------------- */
@@ -4632,8 +4742,8 @@ span.close_google:hover{
     color: #bfbfbf;
     text-align: left;
     line-height: 20px;
-    margin: 0 0 0 13px;
-/*    padding-top: 42px;*/
+    margin: 0 0 0 5px;
+    margin-bottom: 23px;
 }
 .site__menu .breadcrumbs{
     margin: 0 0 21px 13px;
@@ -5736,6 +5846,7 @@ span.close_google:hover{
     margin-bottom: 28px;
     overflow: hidden;
 }
+.comments .btn,
 .contact-us__form .btn {
     display: block;
     position: relative;
@@ -5754,9 +5865,11 @@ span.close_google:hover{
     -moz-box-shadow: 0 -2px 0 #001a3b;
     box-shadow: 0 -2px 0 #001a3b;
 }
+.comments .btn:hover:before,
 .contact-us__form .btn:hover:before{
     display: block;
 }
+.comments .btn:after,
 .contact-us__form .btn:after{
     position: absolute;
     right: 10px;
@@ -5769,12 +5882,14 @@ span.close_google:hover{
 }
 .add_contact{
 }
+.comments .btn_blue,
 .contact-us__form .btn_blue {
     background-image: -moz-linear-gradient(bottom, #08356f 0%, #0b4182 15.33%, #1a67b5 50.12%, #1a67b5 51.68%, #1f73c4 82.86%, #2078ca 100%);
     background-image: -o-linear-gradient(bottom, #08356f 0%, #0b4182 15.33%, #1a67b5 50.12%, #1a67b5 51.68%, #1f73c4 82.86%, #2078ca 100%);
     background-image: -webkit-linear-gradient(bottom, #08356f 0%, #0b4182 15.33%, #1a67b5 50.12%, #1a67b5 51.68%, #1f73c4 82.86%, #2078ca 100%);
     background-image: linear-gradient(bottom, #08356f 0%, #0b4182 15.33%, #1a67b5 50.12%, #1a67b5 51.68%, #1f73c4 82.86%, #2078ca 100%);
 }
+.comments .btn_blue:before,
 .contact-us__form .btn_blue:before {
     display: none;
 }
@@ -5784,6 +5899,19 @@ span.close_google:hover{
     font-size: 22.5px !important;
     letter-spacing: 0;
     line-height: 50px;
+}
+.comments .btn{
+    width: 176px;
+    height: 33px;
+    padding-left: 6px;
+    line-height: 22px;
+    font-size: 15px;
+    letter-spacing: -1.2px;
+}
+.comments .btn:after{
+    right: 8px;
+    top: 8px;
+    background-size: 13px 10.5px;
 }
 /*----------------/contact-us--------------------*/
 
@@ -5917,9 +6045,8 @@ span.close_google:hover{
         left: auto;
     }
     .site__wrap {
-        padding-left: 12px;
-        padding-right: 12px;
-/*        padding-top: 35px;*/
+        padding-left: 6px;
+        padding-right: 6px;
     }
     .site__wrap h1 {
         font-size: 30px;
@@ -6406,25 +6533,23 @@ span.close_google:hover{
 
     /* --------------- comments --------------- */
     .comments {
-        padding: 0 0 0 5px;
+        padding: 28px 15px 13px;
     }
     .comments__list {
         padding: 0 53px 0 27px;
     }
     .add_comment_inner {
-        max-width: 574px;
+
     }
     .comments .add_comment_wrap input {
-        max-width: 219px;
-        width: 40%;
+        display: block;
+        width: 217px;
     }
     .comments .add_comment_wrap input[type="email"] {
-        max-width: 342px;
-        float: right;
-        width: 55%;
+        width: 217px;
     }
     .comments__choose {
-        margin: 0 0 39px 13px;
+        margin: 0 0 39px 0px;
     }
     .comments__choose span {
         display: block !important;
@@ -6434,12 +6559,28 @@ span.close_google:hover{
         margin: 0 6px 0 0;
     }
     .add_comment{
-        width: 30%;
-        height: 25px;
-        cursor: pointer;
+        position: absolute !important;
+        right: 23px;
     }
-    .add_comment div{
-        margin: 7px auto;
+    .comments h3 span {
+        display: inline-block;
+    }
+    .comments__choose div.positive{
+        margin-left: -15px;
+        margin-right: 20px;
+    }
+    .comments__choose div.negative{
+        margin-left:12px;
+    }
+    .comments .add_comment_wrap textarea {
+        margin-bottom: 30px;
+    }
+    .comments h3 {
+        font-size: 20px;
+        letter-spacing: 1.3px;
+    }
+    .comments__all h3{
+        padding-bottom: 19px;
     }
     /* --------------- /comments --------------- */
 
@@ -6550,123 +6691,55 @@ span.close_google:hover{
     /*-------------- /tabs -----------------*/
 
     /*-------------- casino-bonuses -----------------*/
-    .casino-bonuses__items{
-        margin: 0 0 14px;
+    .casino-bonuses__items>div {
+        padding: 0 8px;
     }
-    .casino-bonuses__head>.casino-bonuses__elems>div{
-        display: table-cell;
-        vertical-align: middle;
+    .casino-bonuses__elems {
+        width: 21%;
+        padding-top: 15px;
     }
-    .casino-bonuses__elems,
-    .casino-bonuses__elems:first-child{
-        display: table-cell;
-        vertical-align: middle;
-        width: auto;
-        text-align: left;
-    }
-    .casino-bonuses__elems{
-        text-align: right;
-        width: 250px;
-    }
-    .casino-bonuses__head{
-        padding: 5px 0 5px 38px;
-        display: table;
-        width: 100%;
-        height: 67px;
-        
-    }
-    .casino-bonuses__head .location{
-        top: 50%;
-        left: 14px;
-        margin-top: -7px;
-    }
-    .casino-bonuses__logo {
-        min-width: 120px;
-        padding: 0;
-        width: 177px;
-        text-align: center;
-        height: auto;
-    }
-    .casino-bonuses__open{
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-    }
-    .casino-bonuses__likes{
-/*        display: none;*/
-    }
-    .casino-bonuses > time{
-        font-size: 15px;
-        margin: 0 0 8px 4px;
-    }
-    .casino-bonuses__btn .btn_green,
-    .casino-bonuses__btn .btn_grey{
-        float: right;
-        width: 130px;
-        text-align: center;
-        margin: 4px 6px;
-        padding: 6px 6px;
-        height: 27px;
-        font-size: 15px;
-    }
-    .casino-bonuses__btn {
-        float: right;
-        padding: 0 38px 0 0;
-    }
-    .casino-bonuses .head-caption {
-        padding: 9px 338px 13px 17px;
-        margin: 0 0 25px 0 !important;
-    }
-    .casino-bonuses__name {
-        font-size: 23px;
-        margin: 0 0 5px;
-    }
-    .casino-bonuses__code {
-        font-size: 17px;
-    }
-    .casino-bonuses__open:after {
-/*        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 8px solid #c2c9d2;
-        margin: -5px 0 0 -5px;*/
+    .casino-bonuses_code {
+        position: absolute;
+        left: auto;
+        top: 72px;
+        right: 26px;
+        width: 20%;
+        margin-left: 0;
     }
     .casino-bonuses__assessment {
-        font-size: 17px;
-        padding: 10px 0 47px 0;
+        display: inline-block;
+        width: 415px;
+        padding: 20px 0 21px 20px;
+        border-top: none;
+        border-left: 2px solid #012041;
+        box-shadow: none;
     }
-    .casino-bonuses__assessment dl {
-        padding: 10px 8px 10px 14px;
+    .casino-bonuses__head {
+        padding: 16px 0 0 0;
     }
-    .casino-bonuses__assessment dt,
-    .casino-bonuses__assessment dd {
-        width: 25.2%;
+    .casino-bonuses__amount {
+        padding: 0 40px 7px 13px;
+        margin-bottom: 0;
+        letter-spacing: 0.7px;
     }
-    .casino-bonuses__assessment dd {
-        width: 70%;
+    .casino-bonuses__items dt {
+        width: 38%;
     }
-    .casino-bonuses__valid a {
-/*        width: 45.4%;*/
-        padding: 0 15px 0 0;
+    .casino-bonuses__elems dt {
+        width: 100%;
     }
-    .casino-bonuses__links {
-        margin: 0;
-        width: 52%;
+    .casino-bonuses__items dd {
+        width: 60%;
     }
-    .casino-bonuses__likes {
-        width: 218px;
-        height: 44px;
-        bottom: -10px;
-        margin-left: -105px;
-        padding: 7px 30px 3px 29px;
+    .casino-bonuses__name span {
+        display: inline-block;
     }
-    .casino-bonuses__likes input {
-        width: 50px;
-        height: 23px;
-        margin: 5px 10px 0;
-        padding: 5px 0;
+    .casino-bonuses__head .icons_british {
+        top: 13px;
+        right: 10px;
     }
-    .casino-bonuses__logo>div img{
-        height: 118%;
+    .casino-bonuses__text {
+        padding: 16px 10px 38px;
     }
     /*-------------- /casino-bonuses -----------------*/
 
@@ -9106,105 +9179,17 @@ span.close_google:hover{
     /* ------------- /make-choice --------------- */
 
     /* ------------- casino-bonuses --------------- */
-    .casino-bonuses {
-        min-width: 533px;
-    }
-    .casino-bonuses__btn{
-        padding: 0 20px 0 0;
-    }
-    .casino-bonuses__btn .btn_green{
-        /*background-size: 102% 75px !important;*/
-    }
-    .casino-bonuses__btn {
-        float: none;
-    }
-    .casino-bonuses__btn .btn_green,
-    .casino-bonuses__btn .btn_grey{
-        float: right;
-        width: 118px;
-        height: 20px;
-        text-align: center;
-        margin: 0 0 7px;
-        padding: 4px 0;
-        font-size: 14px;
-    }
-    .casino-bonuses__elems {
-        width: 120px;
-    }
-    .casino-bonuses .head-caption{
-        padding: 9px 3px 4px 14px;
-        margin: 0 0 16px 0 !important;
-    }
-    .casino-bonuses__logo {
-        min-width: 111px;
-        width: 119px;
+    .casino-bonuses__assessment {
+        width: 370px;
+        padding: 20px 0 21px 4px;
+        font-size: 12px;
     }
     .casino-bonuses__logo>div img {
-        height: 81%;
+        width: 109px;
+        height: 69px;
     }
-    .casino-bonuses__name {
-        font-size: 18px;
-        margin: 0 0 7px;
-    }
-    .casino-bonuses__code {
-        font-size: 14px;
-    }
-    .casino-bonuses__open {
-        width: 23px;
-        height: 23px;
-    }
-    .casino-bonuses__open:after {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 6px solid #c2c9d2;
-        margin: -4px 0 0 -4px;
-    }
-    .casino-bonuses__head {
-        height: 66px;
-    }
-    .casino-bonuses__amount{
-        padding-right: 7px;
-    }
-    .casino-bonuses__assessment {
-        font-size: 12px;
-        padding: 0 0 40px 0;
-    }
-    .casino-bonuses__assessment dl {
-        padding: 9px 8px 8px 14px;
-        margin: 0 5px;
-    }
-    .casino-bonuses__assessment dt,
-    .casino-bonuses__assessment dd {
-        width: 28.2%;
-        font-size: 15px;
-    }
-    .casino-bonuses__assessment dd {
-        width: 70%;
-        word-wrap: break-word;
-    }
-    .casino-bonuses__valid a {
-/*        width: 50%;*/
-    }
-    .casino-bonuses__links {
-        width: 48%;
-    }
-    .casino-bonuses__likes input {
-        width: 39px;
-        height: 17px;
-        margin: 4px 0 0;
-        padding: 2px 0;
-        font-size: 12px;
-    }
-    .casino-bonuses__likes span {
-        width: 23px;
-        height: 23px;
-    }
-    .casino-bonuses__likes {
-        width: 163px;
-        height: 33px;
-        bottom: -6px;
-        margin-left: -78px;
-        padding: 3px 32px 3px 32px;
+    .casino-bonuses__items dd {
+        width: 40%;
     }
     /* ------------- /casino-bonuses --------------- */
 
@@ -9517,6 +9502,9 @@ span.close_google:hover{
     }
     /* ------------- /customer-review --------------- */
 
+    .comments {
+        position: relative;
+    }
     /*----------------contact-us--------------------*/
     .contact-us {
         margin-top: 0;
