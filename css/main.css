@@ -3652,7 +3652,7 @@ span.close_google:hover{
 }
 .casino-bonuses__head .location {
     position: absolute;
-    top: 26px;
+    top: 12px;
     right: 4px;
 }
 .casino-bonuses__logo{
@@ -3728,12 +3728,21 @@ span.close_google:hover{
     display: block;
 }
 .casino-bonuses__amount{
+    position: relative;
     padding: 0 40px 6px 6px;
     margin-bottom: 22px;
     min-width: 158px;
-    border-bottom: 2px solid #032246;
-    box-shadow: 0 1px 2px #021832;
+    border-bottom: 2px solid #012041;
 }
+/*.casino-bonuses__amount:after{
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    margin-left: -4px;
+    background: #032246;
+    content: "";
+}*/
 .casino-bonuses__btn{
     min-width: 58px;
     margin: 2px 0 0;
@@ -3851,8 +3860,7 @@ span.close_google:hover{
 }
 .casino-bonuses__text{
     padding: 12px 10px 38px;
-    border-top: 2px solid #032246;
-    box-shadow: 0 -1px 2px #021832;
+    border-top: 2px solid #012041;
     font-size: 13px;
     line-height: 20px;
 }
@@ -4750,7 +4758,7 @@ span.close_google:hover{
     padding: 7px 0 0;
 }
 .breadcrumbs a{
-    color: #79b7df;
+    color: #009ceb;
     display: inline-block;
     background: url("../img/breadcrumbs.png") no-repeat right center;
     padding: 0 17px 0 0;
@@ -4758,13 +4766,15 @@ span.close_google:hover{
 }
 .breadcrumbs a span{
     border-bottom: 1px solid transparent;
+    color: #009ceb;
     -webkit-transition: border 0.3s ease;
     transition: border 0.3s ease;
 }
 .breadcrumbs a:hover span{
-    border-bottom: 1px solid #79b7df;
+    border-bottom: 1px solid #009ceb;
 }
 .breadcrumbs span{
+    color: #e5e5e5;
 }
 /* ------------- /breadcrumbs --------------- */
 
@@ -6077,6 +6087,10 @@ span.close_google:hover{
     .site__wrap_game .site__menu {
         display: none;
     }
+    .site__bonus-title {
+        font-size: 19px;
+        padding-left: 27px;
+    }
     /* --------------- /site --------------- */
 
     /* --------------- logo --------------- */
@@ -6544,12 +6558,10 @@ span.close_google:hover{
     .comments .add_comment_wrap input {
         display: block;
         width: 217px;
-    }
-    .comments .add_comment_wrap input[type="email"] {
-        width: 217px;
+        margin-bottom: 15px;
     }
     .comments__choose {
-        margin: 0 0 39px 0px;
+        margin: 0 0 25px 0px;
     }
     .comments__choose span {
         display: block !important;
@@ -6564,10 +6576,11 @@ span.close_google:hover{
     }
     .comments h3 span {
         display: inline-block;
+        color: inherit;
     }
     .comments__choose div.positive{
-        margin-left: -15px;
-        margin-right: 20px;
+        margin-left: -10px;
+        margin-right: 15px;
     }
     .comments__choose div.negative{
         margin-left:12px;
@@ -6581,6 +6594,23 @@ span.close_google:hover{
     }
     .comments__all h3{
         padding-bottom: 19px;
+    }
+    .casino-bonuses__btn .btn_green, .casino-bonuses__btn .btn_grey {
+        height: 50px;
+        padding: 10px 0;
+    }
+    .casino-bonuses__btn .btn_green{
+        padding: 18px 0;
+        font-size: 19px;
+    }
+    .casino-bonuses__code {
+        font-size: 17px;
+    }
+    .casino-bonuses__code span {
+        font-size: 21px;
+    }
+    .casino-bonuses__items dl {
+        line-height: 36px;
     }
     /* --------------- /comments --------------- */
 
@@ -6695,13 +6725,13 @@ span.close_google:hover{
         padding: 0 8px;
     }
     .casino-bonuses__elems {
-        width: 21%;
-        padding-top: 15px;
+        width: 22%;
+        padding-top: 19px;
     }
     .casino-bonuses_code {
         position: absolute;
         left: auto;
-        top: 72px;
+        top: 58px;
         right: 26px;
         width: 20%;
         margin-left: 0;
@@ -6709,21 +6739,24 @@ span.close_google:hover{
     .casino-bonuses__assessment {
         display: inline-block;
         width: 415px;
-        padding: 20px 0 21px 20px;
+        padding: 20px 0 21px 12px;
         border-top: none;
         border-left: 2px solid #012041;
         box-shadow: none;
     }
     .casino-bonuses__head {
-        padding: 16px 0 0 0;
+        padding: 15px 0 0 0;
     }
     .casino-bonuses__amount {
-        padding: 0 40px 7px 13px;
+        padding: 0px 40px 2px 13px;
         margin-bottom: 0;
         letter-spacing: 0.7px;
     }
+    .casino-bonuses__name {
+        font-size: 21px;
+    }
     .casino-bonuses__items dt {
-        width: 38%;
+        width: 37%;
     }
     .casino-bonuses__elems dt {
         width: 100%;
@@ -6735,7 +6768,7 @@ span.close_google:hover{
         display: inline-block;
     }
     .casino-bonuses__head .icons_british {
-        top: 13px;
+        top: 0;
         right: 10px;
     }
     .casino-bonuses__text {
@@ -8086,8 +8119,8 @@ span.close_google:hover{
         padding: 0 35px 0 4px;
         color: #1f3e5a;
         font-style: italic;
-        border: 1px solid #1f3e5a;
-        background: #C1C7D0;
+        border: 2px solid #00588f;
+        background: #002555;
         text-transform: uppercase;
         box-shadow: inset 0 1px 2px #000510;
     }
@@ -8098,8 +8131,8 @@ span.close_google:hover{
         width: 233px;
     }
     .search input[type="search"]:focus {
-        background: #e6e6e6;
-        color: #808080;
+        background: #00588f;
+        color: #bfbfbf;
     }
     .search .placeholder {
         color: #1f3e5a;
@@ -9180,16 +9213,71 @@ span.close_google:hover{
 
     /* ------------- casino-bonuses --------------- */
     .casino-bonuses__assessment {
-        width: 370px;
-        padding: 20px 0 21px 4px;
-        font-size: 12px;
+        width: 320px;
+        padding: 12px 0 11px 10px;
     }
     .casino-bonuses__logo>div img {
-        width: 109px;
-        height: 69px;
+        width: 102px;
+        height: 68px;
     }
     .casino-bonuses__items dd {
         width: 40%;
+        font-size: 12px;
+    }
+    .casino-bonuses__items dl {
+        padding: 0 7px 0 3px;
+        margin: 0 5px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .casino-bonuses__items dt {
+        width: 35%;
+    }
+    .casino-bonuses__btn .btn_green, .casino-bonuses__btn .btn_grey {
+        height: 39px;
+    }
+    .casino-bonuses__btn .btn_green {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    .casino-bonuses__btn .btn_grey {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+    .casino-bonuses_code {
+        width: 22%;
+    }
+    .casino-bonuses__elems dt{
+        width: 100%;
+        padding: 0;
+    }
+    .casino-bonuses__text {
+        padding: 7px 5px 29px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .casino-bonuses__items dd a {
+        line-height: 18px;
+    }
+    .casino-bonuses__valid:first-child {
+        margin-top: 4px;
+    }
+    .casino-bonuses__likes {
+        width: 195px;
+        height: 41px;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -102px;
+        padding: 4px 20px 3px 20px;
+    }
+    .casino-bonuses__likes input {
+        width: 62px;
+        height: 26px;
+        margin: 5px 0 0;
+    }
+    .casino-bonuses__likes span {
+        width: 25px;
+        height: 25px;
     }
     /* ------------- /casino-bonuses --------------- */
 
@@ -9282,8 +9370,8 @@ span.close_google:hover{
 
     /* ------------- breadcrumbs ------------- */
     .breadcrumbs{
-        font-size: 12px;
-        margin: 0 0 10px 13px;
+        font-size: 14px;
+        margin: 24px 0 23px 6px;
     }
     .site__menu .breadcrumbs{
         margin: 0 0 21px 13px;
@@ -9500,11 +9588,108 @@ span.close_google:hover{
     .casino-accept span + span {
         font-size: 14px;
     }
+    .head-caption.main-title {
+        font-size: 18px !important;
+        margin-top: 0;
+        padding: 5px 12px 10px;
+    }
+    .site__bonus-title {
+        font-size: 18px;
+        padding-left: 19px;
+    }
     /* ------------- /customer-review --------------- */
-
     .comments {
         position: relative;
+        margin-top: 0;
     }
+    .casino-bonuses__head {
+        padding: 11px 0 0 0;
+    }
+    .casino-bonuses__name {
+        margin: 0 0 5px;
+        font-size: 18px;
+    }
+    .casino-bonuses__amount {
+        padding: 0 40px 0 4px;
+        letter-spacing: 0;
+    }
+    .casino-bonuses__elems {
+        padding-top: 8px;
+    }
+    .casino-bonuses {
+        margin: 0 0 35px;
+    }
+    /*----------------comments--------------------*/
+    .comments {
+        padding: 16px 8px 15px;
+    }
+    .comments h3 {
+        font-size: 18px;
+        padding-bottom: 3px;
+        letter-spacing: 0;
+    }
+    .comments__choose div.positive {
+        margin-left: -10px;
+        margin-right: 8px;
+    }
+    .comments__choose div.negative {
+        margin-left: 1px;
+    }
+    .comments__choose div {
+        padding-top: 54px;
+        font-size: 13px;
+    }
+    .comments .add_comment_wrap input {
+        width: 201px;
+    }
+    .comments .add_comment_wrap textarea {
+        margin-bottom: 19px;
+    }
+    .comments .btn {
+        width: 162px;
+        height: 30px;
+        right: 8px;
+        padding-left: 7px;
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .comments .btn:after {
+        right: 7px;
+        top: 5px;
+    }
+    .comments .add_comment_wrap {
+        padding: 0 0 47px;
+    }
+    .comments .comments__all h3{
+        padding-bottom: 8px;
+    }
+    .comments__all-item {
+        position: relative;
+        padding: 13px 7px 12px;
+        margin-bottom: 3px;
+        line-height: 19px;
+        font-size: 12px;
+    }
+    .comments__all-choose {
+        padding-left: 44px;
+    }
+    .comments__all-name {
+        padding-left: 44px;
+        margin-bottom: 10px;
+        letter-spacing: -0.6px;
+    }
+    .comments__all p {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .comments__all-choose span {
+        left: 8px;
+        width: 34px;
+        height: 34px;
+        background-size: 34px 34px;
+    }
+    /*----------------/comments--------------------*/
+
     /*----------------contact-us--------------------*/
     .contact-us {
         margin-top: 0;
