@@ -3989,6 +3989,9 @@ span.close_google:hover{
 .casino-bonuses .casinos-info__all{
     padding: 0;
 }
+.casino-bonuses__items .casinos-info__rating{
+    display: none;
+}
 /*-------------- /casino-bonuses -----------------*/
 
 /*-------------- tabs -----------------*/
@@ -7953,8 +7956,8 @@ span.close_google:hover{
         content: '';
     }
     .contact-us__links li {
+        display: block;
         vertical-align: top;
-        display: inline-block;
         padding: 0 0 0 69px;
     }
     .contact-us__links a:before{
@@ -9585,6 +9588,11 @@ span.close_google:hover{
     .casino-bonuses__likes span {
         width: 25px;
         height: 25px;
+    }
+    .casino-bonuses__elems .casinos-info__rating{
+        display: block;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
     /* ------------- /casino-bonuses --------------- */
 
