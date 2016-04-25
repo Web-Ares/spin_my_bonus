@@ -5929,7 +5929,7 @@ span.close_google:hover{
 /* ------------- casino-review --------------- */
 .casino-review{
     overflow: hidden;
-    margin: 25px 0 48px;
+    margin: 0 0 48px;
 }
 .casino-review_bg{
     background-color: #001e47;
@@ -6026,6 +6026,9 @@ span.close_google:hover{
 }
 .casino-review__author{
     margin-bottom: 15px;
+}
+.casino-review .btn > *{
+    color: #fff;
 }
 .btn_1{
     width: 150px;
@@ -8004,6 +8007,7 @@ span.close_google:hover{
         margin-bottom: 31px;
     }
     .casino-review__content{
+        margin-bottom: 15px;
         padding: 20px 13px;
         overflow: hidden;
     }
