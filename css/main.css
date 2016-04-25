@@ -5979,6 +5979,52 @@ span.close_google:hover{
     background-color: #001e47;
     text-align: center;
 }
+.casino-review__content_inside{
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.casino-review__content_inside .casino-review__casino-info{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+}
+.casino-review__content_inside .casino-review__casino-title{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 120px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.casino-review__content_inside .casino-review__casino-img {
+    width: 111px;
+    margin: 0 0 8px;
+}
+.casino-review__btn-wrap{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 120px;
+    text-align: center;
+}
+.casino-review__content_inside .btn_1{
+    width: 112px;
+    height: 40px;
+    margin-top: 15px;
+    padding-top: 13px;
+    font-size: 16px;
+}
+.casino-review__content_inside .casino-review__rating .star {
+    width: 17px;
+    height: 17px;
+    background-size: 21px 36px;
+}
+.casino-review__content_inside .casino-review__rating{
+    width: 105px;
+    margin: 0 5px;
+}
 .casino-review__casino-info{
     margin-bottom: 28px;
 }
@@ -6055,6 +6101,83 @@ span.close_google:hover{
 .btn_1:hover span{
     transition: color .3s ease;
     -webkit-transition: color .3s ease;
+}
+.casino-review__country{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #002455;
+    color: #bfbfbf;
+    font-size: 15px;
+    line-height: 17px;
+}
+.casino-review__country span{
+    overflow: hidden;
+}
+.casino-review__country .location{
+    float: left;
+    margin-right: 23px;
+}
+.casino-review__info{
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.casino-review__info:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.casino-review__info dt,
+.casino-review__info dd{
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -.5px;
+}
+.casino-review__info dt{
+    font-weight: 600;
+}
+.casino-review__address{
+    padding: 20px 10px 0;
+    background-color: #001e47;
+    font-size: 15px;
+    line-height: 30px;
+}
+.casino-review__address dl:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.casino-review__address a{
+    display: block;
+    color: #50b8e1;
+    text-decoration: underline;
+}
+.casino-review__address dt,
+.casino-review__address dd{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -.5px;
+}
+.casino-review__address dt{
+    width: 39%;
+}
+.casino-review__address dd{
+    width: 59%;
+}
+.casino-review__address-topic{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #e5e5e5;
+    text-transform: uppercase;
 }
 /* ------------- /casino-review --------------- */
 
@@ -6533,13 +6656,11 @@ span.close_google:hover{
         font-size: 15px;
         border-radius: 3px;
     }
-
     .page404 .btn_blue:before {
         width: 148px;
         height: 27px;
         border-radius: 3px;
     }
-
     .page404 {
         width: 100%;
         text-align: center;
@@ -6552,8 +6673,6 @@ span.close_google:hover{
         font-size: 105px;
         margin-bottom:1px;
     }
-
-
     .page404 > img {
         margin-left: 15%;
         position: relative;
@@ -6561,25 +6680,21 @@ span.close_google:hover{
         width: 62%;
         margin-bottom: 17px;
     }
-
     .page404 .page404__error {
         font-size: 30px;
         line-height: 36px;
         margin-bottom: 8px;
     }
-
     .site__404-warning {
         font-size: 18px;
         line-height: 24px;
         margin: 0 auto 1px;
     }
-
     .page404__time {
         font-size: 15px;
         line-height: 24px;
         margin-bottom: 12px;
     }
-
     .page404__time >span {
         font-size: 15px;
         color: #999;
@@ -6587,7 +6702,6 @@ span.close_google:hover{
         margin-bottom: 13px;
         border-radius: 3px;
     }
-
     .page404 .btn_blue span {
         padding-top: 2px;
     }
@@ -6827,7 +6941,6 @@ span.close_google:hover{
         margin-top: -1px;
     }
 
-
     /*-------------- customer-review -----------------*/
     .customer-review {
 /*        width: 62%;*/
@@ -6848,7 +6961,6 @@ span.close_google:hover{
     .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
         width: 88%;
     }
-    
     /*-------------- customer-review -----------------*/
 
     /*-------------- casino-score -----------------*/
@@ -8026,6 +8138,12 @@ span.close_google:hover{
         width: 390px;
         margin-bottom: 0;
     }
+    .casino-review__content_inside .casino-review__casino-info {
+        width: 390px;
+    }
+    .casino-review__btn-wrap{
+        position: static;
+    }
     .casino-review__casino-title{
         position: absolute;
         top: 5px;
@@ -8068,6 +8186,12 @@ span.close_google:hover{
     .casino-review__author{
         font-size: 12px;
         line-height: 11px;
+    }
+    .casino-review__info dt{
+        width: 39%;
+    }
+    .casino-review__info dd{
+        width: 59%;
     }
     /* ------------- /casino-review --------------- */
 
@@ -9678,7 +9802,8 @@ span.close_google:hover{
     /* ------------- breadcrumbs ------------- */
     .breadcrumbs{
         font-size: 14px;
-        margin: 24px 0 23px 6px;
+        margin: 0 0 23px 6px;
+        padding-top: 24px;
     }
     .site__menu .breadcrumbs{
         margin: 0 0 21px 13px;
