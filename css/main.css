@@ -5786,7 +5786,8 @@ span.close_google:hover{
 
 /* ------------- casino-review --------------- */
 .casino-review{
-    margin-top: 25px;
+    overflow: hidden;
+    margin: 25px 0 48px;
     background: #001e47;
 }
 .casino-review .head-caption.main-title {
@@ -5824,9 +5825,166 @@ span.close_google:hover{
     background-color: #de0000;
 }
 .casino-review__content{
+    overflow: hidden;
+    padding: 30px 0;
     background-color: #001e47;
+    text-align: center;
+}
+.casino-review__casino-info{
+    margin-bottom: 28px;
+}
+.casino-review__casino-img{
+    width: 170px;
+    margin: 0 auto 14px;
+}
+.casino-review__casino-img img{
+    width: 100%;
+}
+.casino-review__casino-title{
+    margin: 0 20px 17px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.casino-review__rating{
+    display: table;
+    width: 165px;
+    margin: 0 auto;
+}
+.casino-review__rating .star{
+    width: 26px;
+    height: 26px;
+    background-size: 26px 51px;
+}
+.casino-review__casino-wrap{
+    padding: 28px 12px 15px;
+    border-top: 1px solid #000;
+    background-color: #002455;
+}
+.casino-review__item{
+    margin-bottom: 13px;
+    padding: 20px 13px;
+    border: 1px solid #007fbf;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #032447;
+}
+.casino-review__item-rating{
+    display: inline-block;
+    margin-left: 22px;
+}
+.casino-review__author{
+    margin-bottom: 15px;
+}
+.btn_1{
+    width: 150px;
+    height: 51px;
+    padding-top: 16px;
+    border-bottom: 3px solid #00ba33;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.btn_1:before{
+    background: url("../img/casino-reviewl__btn.png") no-repeat 0 0;
+    background-size: cover;
+}
+.btn_1:hover:before{
+    background: url("../img/casino-reviewl__btn.png") no-repeat 0 0;
+    background-size: cover;
+}
+.btn_1 span{
+    position: relative;
+    z-index: 2;
+}
+.btn_1:hover span{
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
 }
 /* ------------- /casino-review --------------- */
+
+/* ------------- vidit --------------- */
+.vidit{
+    margin-bottom: 25px;
+    padding: 25px 10px;
+    background-color: #001e47;
+    line-height: 22px;
+    overflow: hidden;
+}
+.vidit h3{
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.vidit dl{
+    margin-bottom: 19px;
+}
+.vidit dt{
+    font-size: 18px;
+    font-style: italic;
+}
+.vidit dt,
+.vidit dd{
+    display: block;
+    margin-bottom: 11px;
+    text-align: left;
+    color: #bfbfbf;
+}
+.vidit__rating-inp{
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0 14px!important;
+    margin-bottom: 22px;
+    border: 1px solid #007fbf;
+    background-color: #002555;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5) inset;
+}
+.vidit__rating-inp_message{
+    height: 140px;
+    margin-bottom: 30px;
+    padding: 8px 14px!important;
+}
+.vidit__add_comment{
+    float: right;
+    padding: 4px 13px 2px 25px;
+    border: 1px solid #1872cc;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    color: #fff;
+    background: #1f76c7;
+    background: -moz-linear-gradient(top,  #1f76c7 0%, #1f76c7 45%, #083670 51%, #083670 100%);
+    background: -webkit-linear-gradient(top,  #1f76c7 0%,#1f76c7 45%,#083670 51%,#083670 100%);
+    background: linear-gradient(to bottom,  #1f76c7 0%,#1f76c7 45%,#083670 51%,#083670 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f76c7', endColorstr='#083670',GradientType=0 );
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.vidit__add_comment:hover{
+    opacity: .8;
+}
+.vidit__rating-inp::-webkit-input-placeholder {
+    color: #bfbfbf;
+    -webkit-transition: color 300ms ease-in-out;
+}
+.vidit__rating-inp:-moz-placeholder {
+    color: #bfbfbf;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+.vidit__rating-inp.placeholder {
+    color: #bfbfbf;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+/* ------------- /vidit --------------- */
 
 @media (min-width: 768px){
     
@@ -7723,6 +7881,108 @@ span.close_google:hover{
         bottom: 42px;
     }
     /*----------------/contact-us--------------------*/
+
+    /* ------------- casino-review --------------- */
+    .casino-review{
+        margin-bottom: 31px;
+    }
+    .casino-review__content{
+        padding: 20px 13px;
+        overflow: hidden;
+    }
+    .casino-review .head-caption.main-title{
+        height: 53px;
+        padding-top: 0;
+        line-height: 51px;
+    }
+    .casino-review__link-item{
+        padding: 9px 28px 6px;
+        font-size: 13px;
+    }
+    .casino-review__casino-info{
+        position: relative;
+        float: left;
+        width: 390px;
+        margin-bottom: 0;
+    }
+    .casino-review__casino-title{
+        position: absolute;
+        top: 5px;
+        right: 6px;
+        width: 209px;
+        font-size: 18px;
+    }
+    .casino-review__casino-img {
+        width: 111px;
+        margin: 0 0 8px;
+    }
+    .casino-review__rating{
+        width: 105px;
+        margin: 0 5px;
+    }
+    .casino-review__rating .star {
+        width: 17px;
+        height: 17px;
+        background-size: 21px 36px;
+    }
+    .btn_1{
+        float: right;
+        width: 112px;
+        height: 40px;
+        margin-top: 15px;
+        padding-top: 13px;
+        font-size: 16px;
+    }
+    .casino-review__casino-wrap{
+        padding-top: 18px;
+    }
+    .casino-review__item{
+        margin-bottom: 5px;
+        padding: 12px 8px 10px;
+        line-height: 20px;
+    }
+    .casino-review__mark{
+        font-size: 12px;
+    }
+    .casino-review__author{
+        font-size: 12px;
+        line-height: 11px;
+    }
+    /* ------------- /casino-review --------------- */
+
+    /* ------------- vidit --------------- */
+    .vidit{
+        padding: 15px 13px 20px;
+    }
+    .vidit h3 {
+        margin-bottom: 14px;
+    }
+    .vidit dl{
+        margin-bottom: 12px;
+        text-align: left;
+    }
+    .vidit dt,
+    .vidit dd{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 16px;
+    }
+    .vidit dt {
+        width: 31%;
+        font-size: 14px;
+    }
+    .vidit dd{
+        width: 40%;
+    }
+    .vidit__rating-inp{
+        width: 198px;
+        margin-bottom: 15px;
+    }
+    .vidit__rating-inp_message{
+        width: 100%;
+    }
+    /* ------------- /vidit --------------- */
+
 }
 @media (min-width: 1000px){
 
