@@ -3723,6 +3723,7 @@ span.close_google:hover{
     display: block;
     margin: 0 0 7px;
     line-height: 24px;
+    color: #fff;
 }
 .casino-bonuses__name span{
     display: block;
@@ -5929,7 +5930,9 @@ span.close_google:hover{
 .casino-review{
     overflow: hidden;
     margin: 25px 0 48px;
-    background: #001e47;
+}
+.casino-review_bg{
+    background-color: #001e47;
 }
 .casino-review .head-caption.main-title {
     height: 71px;
@@ -5956,14 +5959,19 @@ span.close_google:hover{
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;
-    background-color: #001738;
-    transition: translateZ(0);
-    -webkit-transition: translateZ(0);
+    background-color: #001737;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
     text-align: center;
     border-radius: 0 0 5px 5px;
 }
-.casino-review__link-item_active{
+.casino-review__link-item:hover{
+    background-color: #012555;
+}
+.casino-review__link-item_active,
+.casino-review__link-item_active:hover{
     background-color: #de0000;
+    cursor: default;
 }
 .casino-review__content{
     overflow: hidden;
