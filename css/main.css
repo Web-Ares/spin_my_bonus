@@ -5094,9 +5094,6 @@ span.close_google:hover{
     margin-bottom: 48px;
     margin-right: 1px;
 }
-.casinos-info__list .casinos-info__head {
-    display: none;
-}
 .casinos-info header {
     display: block;
     text-align: left;
@@ -5123,11 +5120,19 @@ span.close_google:hover{
 }
 .casinos-info__list > li > div {
     display: block;
-    height: 50px;
 }
 .casinos-info__list > li > .casinos-info__software,
-.casinos-info__list > li.casinos-info__sample {
+.casinos-info__list > li.casinos-info__sample,
+.casinos-info__list .logo_wrap,
+.casinos-info__list .casinos-info__head{
     display: none;
+}
+.casinos-info__head .casinos-info__bonus{
+    color: #fff;
+}
+.casinos-info__flag {
+    position: absolute;
+    top: 20px;
 }
 .casinos-info__logo{
     margin-left: 30px;
@@ -5135,20 +5140,11 @@ span.close_google:hover{
 .casinos-info__logo .casinos-info__rating{
     margin-top: 7px;
 }
-.casinos-info__list .logo_wrap{
-    display: none;
-}
 .casinos-info__software a{
     color: #fff;
 }
 .casinos-info__software a:hover{
     text-decoration: underline;
-}
-.casinos-info__flag {
-    position: absolute;
-    top: 20px;
-    padding-top: 23px;
-    /* left: 10px; */
 }
 .casinos-info__name {
     font-size: 14px;
@@ -5164,10 +5160,11 @@ span.close_google:hover{
 }
 .casinos-info__list > li {
     position: relative;
-    display: block;
-    background: #032347;
-    margin-top: 8px;
-    padding: 19px 10px 6px 10px;
+    width: 100%;
+    max-height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid #01152d;
+    background-color: #032347;
     overflow: hidden;
 }
 .casinos-info__list > li:nth-child(even) {
@@ -5187,11 +5184,7 @@ span.close_google:hover{
     height: 14px;
     margin: 0 6px 0 0;
 }
-.casinos-info__bonus-desktop {
-/*    display: none;*/
-}
 .casinos-info__bonus{
-    margin-left: 30px;
     font-size: 13px;
     text-align: left;
     color: #c0c0c0;
@@ -5209,9 +5202,7 @@ span.close_google:hover{
 }
 .casinos-info__bonus-fs {
     display: block;
-    margin-bottom: 7px;
     position: relative;
-    padding-right: 90px;
 }
 .casinos-info__support {
     padding: 8px 0 0 2px;
@@ -5332,28 +5323,30 @@ span.close_google:hover{
     padding-bottom: 11px;
 }
 .game-box-warning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffa18e;
     color:#ca0000;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 26px;
     font-weight: 700;
     font-family: "Trebuchet MS", sans-serif;
     border: 1px solid #ca0000;
-    padding: 6px 10px 6px 60px;
+    padding: 6px 10px 6px 10px;
     position:relative;
     margin-bottom: 10px;
 }
 .game-box-warning:before{
     content:'';
-    position: absolute;
-    top:5px;
-    left:18px;
     display: block;
-    background: url("../img/mobileicon.png") no-repeat;
-    background-size: cover;
-    width: 26px;
-    height: 31px;
+    background: url("../img/icon__warning.png") no-repeat center;
+    width: 94px;
+    height: 45px;
+    margin-right: 10px;
+}
+.game-box-warning p{
+    text-align: left;
 }
 .game-box img {
     display: block;
@@ -6186,6 +6179,26 @@ span.close_google:hover{
     text-transform: uppercase;
 }
 /* ------------- /casino-review --------------- */
+
+/* ------------- casino__info --------------- */
+.casino__info{
+    margin-bottom: 30px;
+    padding: 15px 10px 1px;
+    color: #e5e5e5;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #001e47;
+}
+.casino__info p{
+    margin-bottom: 25px;
+}
+.casino__info-title{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* ------------- /casino__info --------------- */
 
 /* ------------- vidit --------------- */
 .vidit{
@@ -7211,21 +7224,19 @@ span.close_google:hover{
         margin-bottom: 9px;
     }
     .casinos-info__list > li {
-        display: table;
-        background: #032954;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
         width: 100%;
         font-size: 12px;
-        position: relative;
-
-        margin: 0;
-        padding: 0;
+        background-color: #032954;
     }
     .casinos-info__list > li.light {
-        background: #000;
+        background-color: #000;
     }
     .casinos-info__list > li:nth-child(even) {
-
-        background: #032347;
+        background-color: #032347;
     }
     .casinos-info__list > li:hover {
         background:  url("../img/casinos-info__shadow.png") no-repeat center bottom, #032954;
@@ -7239,9 +7250,6 @@ span.close_google:hover{
         display: block;
         text-align: justify;
     }
-    .casinos-info__sample .pop-games__pic {
-        /* height: 197px; */
-    }
     .casinos-info__list > li:nth-child(even):hover {
         background: url("../img/casinos-info__shadow.png") no-repeat center bottom, #032347;
     }
@@ -7251,106 +7259,65 @@ span.close_google:hover{
     .casinos-info__list > .casinos-info__sample:hover {
         background: #032347;
     }
-    .casinos-info__list > li:first-child {
-        margin-top: 0;
-    }
     .casinos-info__list > li > div {
-        display: table-cell;
-        vertical-align: top;
-        text-align: left;
-        padding: 19px 0 0px;
-        border-bottom: 1px solid #01152d;
-
-        margin: 0;
-        height: 89px;
-    }
-    .casinos-info__list > .casinos-info__head > div {
-        padding: 9px 0 1px;
-        border-bottom: none;
-
-        height: 37px;
-        font-size: 17px !important;
-        padding-top: 11px !important;
+        text-align: center;
     }
     .casinos-info__list .casinos-info__head {
-        background: #0445a1;
-        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
         border-bottom: none;
-        display: table;
+        font-size: 12px;
+        background-color: #0445a1;
     }
     .casinos-info__list .casinos-info__head:hover {
-        background: #0445a1
+        background-color: #0445a1
     }
-    .casinos-info__list > li >.casinos-info__flag {
-        vertical-align: middle;
-        width: 8.2%;
-        text-align: center;
-        padding-top: 19px;
+    .casinos-info__list > li > .casinos-info__flag {
         position: relative;
         top: auto;
         left: auto;
-        padding-bottom: 20px;
+        width: 5%;
     }
-    .casinos-info__list > .casinos-info__head >.casinos-info__flag {
-        padding: 12px 0 9px 0;
-
+    .casinos-info__list > li > .casinos-info__logo{
+        width: 25%;
+        margin-left: 0;
+    }
+    .casinos-info__list > li > .casinos-info__bonus{
+        width: 25%;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .casinos-info__list .casinos-info__head .casinos-info__bonus{
+        text-align: center;
+    }
+    .casinos-info__list > li > .casinos-info__software{
+        display: inline-block;
+        width: 15%;
+    }
+    .casinos-info__list > li > .casinos-info__view {
         position: relative;
         top: auto;
-        left: auto;
-    }
-    .casinos-info__list > li > .casinos-info__logo {
-        width: 20%;
-        vertical-align: top;
+        right: auto;
+        width: 25%;
         text-align: center;
-        padding-top: 17px;
     }
     .casinos-info__logo a {
         display: inline-block;
     }
     .casinos-info__list > .casinos-info__head  > .casinos-info__logo {
-        padding: 0;
+        margin-left: 0;
         text-align: center;
-        width: 20%;
-        font-size: 17px;
-    }
-    .casinos-info__list > li > .casinos-info__name {
-        width: 27.8%;
-        padding-left: 10px;
-    }
-    .casinos-info__list > li > .casinos-info__bonus {
-        width: 22.5%;
-        padding-top: 17px;
-        padding-left: 0;
-        font-size: 12px;
-    }
-    .casinos-info__list > .casinos-info__head > .casinos-info__bonus{
-        text-align: center;
-    }
-    .casinos-info__list > li > .casinos-info__software {
-        width: 78px;
-        padding-left: 16px;
-    }
-    .casinos-info__list > li > .casinos-info__view {
-        width: auto;
-        text-align: center;
-        position: relative;
-
-        top: auto;
-        right: auto;
     }
     .casinos-info__list > li > .casinos-info__view > span {
         display: block;
-
-        padding: 1px 0 0 4px;
     }
     .casinos-info__name a {
         font-size: 17px;
         color: #bfbfbf;
         margin-bottom: 10px;
-
-        padding: 0;
     }
-    .casinos-info__rating {}
     .casinos-info__rating .rating {
         vertical-align: top;
         width: 91px;
@@ -7365,9 +7332,6 @@ span.close_google:hover{
     }
     .casinos-info__logo span {
         display: inline-block;
-    }
-    .casinos-info__list > li > .casinos-info__software{
-        display: inline-block
     }
     .casinos-info__play {
         width: 100px;
@@ -7549,15 +7513,13 @@ span.close_google:hover{
     .casinos-info__list > li.active .casinos-info__view-btn:before {
         content: '';
         position: absolute;
-        border-radius: 45%;
-        width: 93px;
-        height: 70px;
         left: 0;
         top: 0;
-        background: #e46d27;
+        width: 86px;
+        height: 83px;
+        border-radius: 65%;
+        background-color: #e46d27;
         box-shadow: inset 0 0 10px 2px rgba(0,0,0,1);
-
-        border-radius: 65%;    width: 86px;    height: 83px;
     }
     .casinos-info__list > li.active .casinos-info__view-btn:after {
         border: 6px solid transparent;
@@ -7566,9 +7528,6 @@ span.close_google:hover{
     }
     .casinos-info__bonus-deposit {
         padding-right: 0;
-    }
-    .casinos-info__list > .casinos-info__head > .casinos-info__logo {
-        display: table-cell;
     }
     .casinos-info__slots,
     .casinos-info__bonus-mobile,
@@ -7588,10 +7547,7 @@ span.close_google:hover{
         left: 2px;
     }
     .casinos-info__bonus-fs {
-        margin-bottom: 10px;
         position: relative;
-        padding-left: 15px;
-        padding-right: 0;
     }
     .casinos-info__sample-software {
         display: block;
@@ -8202,6 +8158,17 @@ span.close_google:hover{
         width: 59%;
     }
     /* ------------- /casino-review --------------- */
+
+    /* ------------- casino__info --------------- */
+    .casino__info {
+        display: flex;
+        display: -webkit-flex;
+    }
+    .casino__info-content{
+        width: 75%;
+        padding-left: 25px;
+    }
+    /* ------------- /casino__info --------------- */
 
     /* ------------- vidit --------------- */
     .vidit{
@@ -9285,9 +9252,10 @@ span.close_google:hover{
         margin-bottom: 9px;
     }
     .casinos-info__list > li {
-        display: table;
         background: #032954;
         width: 100%;
+        max-height: none;
+        padding-bottom: 20px;
         font-size: 12px;
         position: relative;
     }
@@ -9295,7 +9263,6 @@ span.close_google:hover{
         background: #000;
     }
     .casinos-info__list > li:nth-child(even) {
-
         background: #032347;
     }
     .casinos-info__list > li:hover {
@@ -9303,7 +9270,6 @@ span.close_google:hover{
     }
     .casinos-info__list > li.active + .casinos-info__sample {
         display: block;
-
         padding: 0 0 15px;
     }
     .casinos-info__list > li:nth-child(even):hover {
@@ -9312,41 +9278,12 @@ span.close_google:hover{
     .casinos-info__list > .casinos-info__sample:hover {
         background: #032347;
     }
-    .casinos-info__list > li:first-child {
-        margin-top: 0;
-    }
-    .casinos-info__list > li > div {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: left;
-        padding: 7px 0 18px;
-        border-bottom: 1px solid #01152d;
-    }
-    .casinos-info__list > .casinos-info__head > div {
-        padding: 9px 9px 1px !important;
-        border-bottom: none;
-        height: 27px;
-        font-size: 12px !important;
-    }
     .casinos-info__list .casinos-info__head {
-        background: #0445a1;
-        padding: 0;
+        background-color: #0445a1;
         border-bottom: none;
-    }
-    .casinos-info__list > li >.casinos-info__flag {
-        vertical-align: top;
-        text-align: center;
-        padding-top: 19px;
-    }
-    .casinos-info__list > .casinos-info__head >.casinos-info__flag {
-        padding: 7px 0 3px 0;
     }
     .casinos-info__list > li > .casinos-info__logo {
-        width: 69px;
-        vertical-align: top;
         text-align: center;
-        padding-top: 16px;
-        display: table-cell;
     }
     .casinos-info__logo a {
         display: inline-block;
@@ -9358,25 +9295,15 @@ span.close_google:hover{
     .casinos-info__list .logo_wrap{
         display: block;
     }
-    .casinos-info__list > li > .casinos-info__bonus {
-        width: 72px;
-        padding-left: 4px;
-        font-size: 12px;
-        padding-top: 6px;
+    .casinos-info__list > li > .casinos-info__bonus{
+        width: 30%;
+        line-height: 30px;
     }
-    .casinos-info__list > li > .casinos-info__software {
-        width: 84px;
-        padding-left: 15px !important;
-        display: table-cell;
-    }
-    .casinos-info__list > li > .casinos-info__view {
-        width: 91px;
-        text-align: center;
-        position: relative;
+    .casinos-info__list > li > .casinos-info__view{
+        width: 19%;
     }
     .casinos-info__list > li > .casinos-info__view > span {
         display: block;
-        height: 83px;
     }
     .casinos-info__name a {
         display: block;
@@ -9384,7 +9311,6 @@ span.close_google:hover{
         color: #bfbfbf;
         margin-bottom: 6px;
     }
-    .casinos-info__rating {}
     .casinos-info__rating .rating {
         vertical-align: top;
         width: 63px;
@@ -9403,7 +9329,7 @@ span.close_google:hover{
     .casinos-info__play {
         position: relative;
         width: 90px;
-        height: 20px;
+        height: 26px;
         margin: -2px auto 7px;
         display: block;
         font-weight: 700;
@@ -9411,7 +9337,7 @@ span.close_google:hover{
         font-size: 14px;
         overflow: hidden;
         text-transform: uppercase;
-        padding-top: 2px;
+        padding-top: 6px;
     }
     .casinos-info__play span, .casinos-info__review span {
         position: relative;
@@ -9422,7 +9348,7 @@ span.close_google:hover{
     .casinos-info__review {
         position: relative;
         width: 90px;
-        height: 20px;
+        height: 26px;
         margin: 0 auto 1px;
         display: block;
         font-weight: 700;
@@ -9430,7 +9356,7 @@ span.close_google:hover{
         font-size: 14px;
         overflow: hidden;
         text-transform: uppercase;
-        padding: 2px 0 0;
+        padding: 6px 0 0;
         float: none;
     }
     .casinos-info__netent {
