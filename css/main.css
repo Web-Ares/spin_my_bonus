@@ -7093,6 +7093,11 @@ span.close_google:hover{
     .casino-bonuses__text {
         padding: 16px 10px 38px;
     }
+    .casino-bonuses__elems .casinos-info__rating{
+        display: block;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
     /*-------------- /casino-bonuses -----------------*/
 
     /*-------------- bonuses__inner -----------------*/
@@ -9717,6 +9722,10 @@ span.close_google:hover{
         display: block;
         margin-top: 0;
         margin-bottom: 10px;
+    }
+    .casino-bonuses__code span {
+        margin: 6px 0 11px;
+        font-size: 18px;
     }
     /* ------------- /casino-bonuses --------------- */
 
