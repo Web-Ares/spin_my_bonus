@@ -500,7 +500,7 @@ input[type="search"]::-webkit-search-cancel-button {
     overflow: hidden;
 }
 .pnum_span{
-    
+
 }
 .pg_nav_btn{
     width: 50px;
@@ -636,7 +636,7 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 20px;
     background: url(../img/tiny_green_smiley.png) no-repeat;
     background-position-x: 3px;
-    
+
 }
 .your_rating{
     float: left;
@@ -698,10 +698,10 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
 }
 /* Google search */
-.google_res_wrap{ 
-    width: 95%; 
-    height: 2000px; 
-    position: relative; 
+.google_res_wrap{
+    width: 95%;
+    height: 2000px;
+    position: relative;
     margin: 20px auto 0 auto;
 }
 .search_title_wrap{
@@ -721,23 +721,23 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
     font-size: 16px;
 }
-.google_frame{ 
-    width: 100%; 
-    height: 100%;  
+.google_frame{
+    width: 100%;
+    height: 100%;
 }
-span.close_google{ 
-    background-color: #D01919; 
-    color: white; 
-    position: absolute; 
-    top: -6px; 
-    right: -5px; 
+span.close_google{
+    background-color: #D01919;
+    color: white;
+    position: absolute;
+    top: -6px;
+    right: -5px;
     padding: 4px 9px;
     border-radius: 12px;
     cursor: pointer;
     z-index: 1;
 }
-span.close_google:hover{ 
-    background-color: #ca1c41; 
+span.close_google:hover{
+    background-color: #ca1c41;
 }
 
 /* ------------- btn --------------- */
@@ -1171,11 +1171,11 @@ span.close_google:hover{
     font-family: "Trebuchet MS", sans-serif;
 }
 /* GAME FRAME */
-.div_fullscreen{ 
-    position: relative; 
-    z-index: 2; 
-    position: fixed; 
-    top: 0; left: 0; 
+.div_fullscreen{
+    position: relative;
+    z-index: 2;
+    position: fixed;
+    top: 0; left: 0;
     background-color: black;
 }
 .frame{
@@ -1183,8 +1183,8 @@ span.close_google:hover{
     border: 0;
     overflow: hidden;
 }
-.frame_full{ 
-    overflow: hidden; 
+.frame_full{
+    overflow: hidden;
 }
 .close_game{
     display: inline-block;
@@ -3121,8 +3121,8 @@ span.close_google:hover{
 
 .icons_syria{background-position: 0 -39px;}
 .icons_syria_bw{background-position: 0 -262px;}
-.icons32{background-position: -24px -39px;} 
-.icons32_bw{background-position: -24px -262px;} 
+.icons32{background-position: -24px -39px;}
+.icons32_bw{background-position: -24px -262px;}
 .icons_33{background-position: -49px -39px;}
 .icons_33_bw{background-position: -49px -262px;}
 .icons_mongolia{background-position: -73px -39px;}
@@ -3284,14 +3284,14 @@ span.close_google:hover{
 .icons_eritrea_bw{background-position: -49px -355px;}
 .icons_lesotho{background-position: -73px -132px;}
 .icons_lesotho_bw{background-position: -73px -355px;}
-.icons_cote_divoire{background-position: -98px -132px;} 
-.icons_cote_divoire_bw{background-position: -98px -355px;} 
+.icons_cote_divoire{background-position: -98px -132px;}
+.icons_cote_divoire_bw{background-position: -98px -355px;}
 .icons_kenya{background-position: -122px -132px;}
 .icons_kenya_bw{background-position: -122px -355px;}
 .icons_samoa{background-position: -147px -132px;}
 .icons_samoa_bw{background-position: -147px -355px;}
-.icons_micronesia{background-position: -172px -132px;} 
-.icons_micronesia_bw{background-position: -172px -355px;} 
+.icons_micronesia{background-position: -172px -132px;}
+.icons_micronesia_bw{background-position: -172px -355px;}
 .icons114{background-position: -197px -132px;} /* ? */
 .icons114_bw{background-position: -197px -355px;} /* ? */
 .icons_switzerland{background-position: -222px -132px;}
@@ -5645,14 +5645,14 @@ span.close_google:hover{
   100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
 }*/
 @keyframes rotateplane {
-  0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) } 
-  50% { transform: perspective(120px) rotateX(-360.1deg) rotateY(0deg); -webkit-transform: perspective(120px) rotateX(-360.1deg) rotateY(0deg) } 
+  0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) }
+  50% { transform: perspective(120px) rotateX(-360.1deg) rotateY(0deg); -webkit-transform: perspective(120px) rotateX(-360.1deg) rotateY(0deg) }
   100% { transform: perspective(120px) rotateX(-360deg) rotateY(-360.9deg); -webkit-transform: perspective(120px) rotateX(-360deg) rotateY(-360.9deg); }
 }
 /* Lazy load animation end */
 
 /*PAGINATION*/
-/*.paging_wrap{ 
+/*.paging_wrap{
     width: 100%; height: 60px; position: fixed; bottom: 0; left: 0; z-index: 999;
     border-radius: 10px 10px 0 0;
     background: -webkit-linear-gradient(bottom, #000 10%, #033069);
@@ -6281,7 +6281,7 @@ span.close_google:hover{
 /* ------------- /vidit --------------- */
 
 @media (min-width: 768px){
-    
+
     .google_res_wrap{
         height: 1300px;
     }
@@ -6780,7 +6780,7 @@ span.close_google:hover{
         left: -3px;
     }
     .pop-games__pic img {
-        
+
     }
     .pop-games__name {
         position: absolute;
@@ -7320,8 +7320,8 @@ span.close_google:hover{
     }
     .casinos-info__rating .rating {
         vertical-align: top;
-        width: 91px;
-        height: 16px;
+        width: 90px;
+        height: 15px;
         margin-right: 2px;
     }
     .casinos-info__rating span {
@@ -8220,8 +8220,8 @@ span.close_google:hover{
     .ajax_aside_block{
         height: 450px;
     }
-    .google_res_wrap{ 
-        width: 100%; 
+    .google_res_wrap{
+        width: 100%;
         margin: 0 auto;
     }
     .msg_box{
@@ -9313,8 +9313,8 @@ span.close_google:hover{
     }
     .casinos-info__rating .rating {
         vertical-align: top;
-        width: 63px;
-        height: 11px;
+        width: 65px;
+        height: 10.5px;
         margin-left: 7px;
     }
     .casinos-info__rating span {
