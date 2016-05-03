@@ -1610,7 +1610,7 @@ span.close_google:hover{
     width: 78%;
 }
 .rating_9{
-    width: 92%;
+    width: 91%;
 }
 .rating_10{
     width: 100%;
@@ -3706,7 +3706,7 @@ span.close_google:hover{
     display: block;
     padding: 6px 0;
     margin: 6px 0 23px;
-    border: 2px dashed #662e43;
+    border: 2px dashed rgb(253, 52, 52);
     border-radius: 5px;
     font-size: 18px;
 }
