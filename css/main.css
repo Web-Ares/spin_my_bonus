@@ -3758,7 +3758,12 @@ span.close_google:hover{
 .casino-bonuses__btn .btn_green{
     text-transform: uppercase;
     padding: 14px 0;
+    color:#fff;
     white-space: nowrap;
+    border-bottom: 3px solid #00ba33;
+}
+.btn_green:hover{
+    border-bottom: none;
 }
 .casino-bonuses__btn .btn_grey{
     padding: 4px 0;
@@ -3797,6 +3802,7 @@ span.close_google:hover{
     position: relative;
     border-top: 2px solid #032246;
     box-shadow: 0 -1px 2px #021832;
+    text-align: left;
 }
 .casino-bonuses__assessment h3{
     font-size: 14px;
@@ -6085,14 +6091,14 @@ span.close_google:hover{
     text-transform: uppercase;
     z-index: 1;
 }
-.btn_1:before{
+/*.btn_1:before{
     background: url("../img/casino-reviewl__btn.png") no-repeat 0 0;
     background-size: cover;
 }
 .btn_1:hover:before{
     background: url("../img/casino-reviewl__btn.png") no-repeat 0 0;
     background-size: cover;
-}
+}*/
 .btn_1 span{
     position: relative;
     z-index: 2;
