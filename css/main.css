@@ -3747,7 +3747,9 @@ span.close_google:hover{
     vertical-align: top;
 }
 .casino-bonuses__btn .btn_green,
+.casinos-info .btn_green,
 .casino-bonuses__btn .btn_grey{
+.casinos-info .btn_grey{
     width: 100%;
     height: 40px;
     text-align: center;
@@ -3756,6 +3758,7 @@ span.close_google:hover{
     line-height: 17px;
 }
 .casino-bonuses__btn .btn_green{
+.casinos-info .btn_green{
     text-transform: uppercase;
     padding: 14px 0;
     color:#fff;
@@ -3767,6 +3770,7 @@ span.close_google:hover{
     border-bottom: none;
 }
 .casino-bonuses__btn .btn_grey{
+.casinos-info .btn_grey{
     padding: 4px 0;
     color: #404040;
     font-size: 14px;
@@ -5529,9 +5533,6 @@ span.close_google:hover{
     font-size: 20px;
     padding: 13px 5px;
 }
-.real-bonuses__list li .btn_grey span{
-    color: #fff;
-}
 .pic-inner {
     position: relative;
     z-index: 5;
@@ -5573,9 +5574,6 @@ span.close_google:hover{
     z-index: 5;
     margin: 0 11px 11px 0;
     padding: 13px 3px;
-}
-.real-bonuses__list .btn_gold span{
-    color: #fff;
 }
 /* ------------- /game-box --------------- */
 
