@@ -7395,6 +7395,15 @@ span.close_google:hover{
         position: relative;
         z-index: 2;
     }
+    .casinos-info .btn_green,
+    .casinos-info .btn_grey{
+        display: inline-block;
+        vertical-align: top;
+        width: 100px;
+        height: 27px;
+        margin: 0 15px 1px 0;
+        padding-top: 6px;
+    }
     .casinos-info__netent {
         display: inline-block;
         font-size: 12px;
@@ -9343,6 +9352,13 @@ span.close_google:hover{
         vertical-align: top;
         margin-left: 6px;
         font-size: 12px;
+    }
+    .casinos-info .btn_green,
+    .casinos-info .btn_grey{
+        display: block;
+        width: 90px;
+        height: 26px;
+        margin: 0 auto 7px;
     }
     .casinos-info__logo span {
         display: inline-block;
