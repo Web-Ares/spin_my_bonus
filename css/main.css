@@ -3763,6 +3763,7 @@ span.close_google:hover{
     border-bottom: 3px solid #00ba33;
 }
 .btn_green:hover{
+    color: #fff;
     border-bottom: none;
 }
 .casino-bonuses__btn .btn_grey{
