@@ -3763,10 +3763,8 @@ span.close_google:hover{
     width: 90px;
     height: 31px;
     margin: 0 auto 11px;
+    padding: 7px 0 0;
     font-size: 13px;
-}
-.casinos-info .btn_green div{
-
 }
 .casinos-info .btn_grey div{
     color: #000;
