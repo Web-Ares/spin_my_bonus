@@ -3759,6 +3759,7 @@ span.close_google:hover{
 }
 .casinos-info .btn_green,
 .casinos-info .btn_grey{
+    display: block;
     width: 90px;
     height: 31px;
     margin: 0 auto 11px;
