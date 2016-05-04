@@ -5529,6 +5529,9 @@ span.close_google:hover{
     font-size: 20px;
     padding: 13px 5px;
 }
+.real-bonuses__list li .btn_grey span{
+    color: #fff;
+}
 .pic-inner {
     position: relative;
     z-index: 5;
@@ -5570,6 +5573,9 @@ span.close_google:hover{
     z-index: 5;
     margin: 0 11px 11px 0;
     padding: 13px 3px;
+}
+.real-bonuses__list .btn_gold span{
+    color: #fff;
 }
 /* ------------- /game-box --------------- */
 
