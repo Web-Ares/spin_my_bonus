@@ -3759,19 +3759,13 @@ span.close_google:hover{
 }
 .casinos-info .btn_green,
 .casinos-info .btn_grey{
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
     width: 90px;
     height: 31px;
     margin: 0 auto 11px;
     font-size: 13px;
 }
 .casinos-info .btn_green div{
-    margin-top: 3px;
+
 }
 .casinos-info .btn_grey div{
     color: #000;
@@ -5192,7 +5186,7 @@ span.close_google:hover{
 .casinos-info__list > li {
     position: relative;
     width: 100%;
-    max-height: 100px;
+    height: 100px;
     padding: 10px;
     border-bottom: 1px solid #01152d;
     background-color: #032347;
