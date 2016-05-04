@@ -3757,15 +3757,6 @@ span.close_google:hover{
     font-size: 16px;
     line-height: 17px;
 }
-.casinos-info .btn_green,
-.casinos-info .btn_grey{
-    display: block;
-    width: 90px;
-    height: 31px;
-    margin: 0 auto 11px;
-    padding: 7px 0 0;
-    font-size: 13px;
-}
 .casinos-info .btn_grey div{
     color: #000;
     text-transform: uppercase;
@@ -3793,6 +3784,15 @@ span.close_google:hover{
     position: relative;
     padding-left: 10px;
     color: #003b90;
+}
+.casinos-info .btn_green,
+.casinos-info .btn_grey{
+    display: block;
+    width: 90px;
+    height: 31px;
+    margin: 0 auto 11px;
+    padding: 7px 0 0;
+    font-size: 13px;
 }
 .casino-bonuses__btn .btn_grey div:last-child:before{
     position: absolute;
