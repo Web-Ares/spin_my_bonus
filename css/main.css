@@ -7252,7 +7252,7 @@ span.close_google:hover{
     /*-------------- /game-box-----------------*/
 
     /* ------------- casinos-info -------------- */
-    .casinos-info__mobile{
+    .casinos-info__list > li > div.casinos-info__mobile{
         display: none;
     }
     .casinos-info_text{
@@ -7282,9 +7282,6 @@ span.close_google:hover{
         width: 100%;
         font-size: 14px;
         background-color: #032954;
-    }
-    .casinos-info__mobile{
-        display: none;
     }
     .casinos-info__list > li.light {
         background-color: #000;
