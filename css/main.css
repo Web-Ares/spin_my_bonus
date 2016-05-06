@@ -5217,16 +5217,21 @@ span.close_google:hover{
     top: 0;
     left: 10px;
     width: 19px;
+    height: 22px;
+    padding: 3px 2px 0;
+    border-radius: 0 0 3px 3px;
     background-image: -moz-linear-gradient(bottom, #519d4f 0%, #118501 15.33%, #1f9d00 50.12%, #43af23 51.68%, #69d13f 82.86%, #bbefa7 100%);
     background-image: -o-linear-gradient(bottom, #519d4f 0%, #118501 15.33%, #1f9d00 50.12%, #43af23 51.68%, #69d13f 82.86%, #bbefa7 100%);
     background-image: -webkit-linear-gradient(bottom, rgba(81,157,79,0.6) 0%, rgba(17,133,1,0.6) 15.33%, rgba(31,157,0,0.6) 50.12%, rgba(67,175,35,0.6) 51.68%, rgba(105,209,63,0.8) 82.86%, rgba(187,239,167,1) 100%);
     background-image: linear-gradient(bottom, rgba(81,157,79,0.6) 0%, rgba(17,133,1,0.6) 15.33%, rgba(31,157,0,0.6) 50.12%, rgba(67,175,35,0.6) 51.68%, rgba(105,209,63,0.8) 82.86%, rgba(187,239,167,1) 100%);
 }
 .casinos-info__mobile:before{
-    width: 16px;
+    width: 15px;
+    height: 16px;
     background: url("../img/icon-mobile.png") no-repeat 0 0;
     background-size: cover;
     content: '';
+    display: block;
 }
 .casinos-info__bonus{
     margin-left: 30px;
