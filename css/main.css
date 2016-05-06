@@ -7319,6 +7319,7 @@ span.close_google:hover{
         justify-content: space-between;
         -webkit-justify-content: space-between;
         height: 35px;
+        min-height: 35px;
         align-items: center;
         padding: 10px;
         border-bottom: none;
