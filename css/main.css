@@ -5162,7 +5162,7 @@ span.close_google:hover{
     margin-left: 30px;
 }
 .casinos-info__logo .casinos-info__rating{
-    margin-top: 7px;
+    margin: 6px 0;
 }
 .casinos-info__software a{
     color: #fff;
@@ -5189,10 +5189,14 @@ span.close_google:hover{
     padding: 10px;
     border-bottom: 1px solid #01152d;
     background-color: #032347;
+    font-size: 12px;
     overflow: hidden;
 }
 .casinos-info__list > li:nth-child(even) {
     background: #032954;
+}
+.casinos-info__logo a {
+    color: #c0c0c0;
 }
 .casinos-info__name a {
     font-weight: 400;
@@ -5209,7 +5213,9 @@ span.close_google:hover{
     margin: 0 6px 0 0;
 }
 .casinos-info__bonus{
+    margin-left: 30px;
     font-size: 13px;
+    line-height: 20px;
     text-align: left;
     color: #c0c0c0;
 }
