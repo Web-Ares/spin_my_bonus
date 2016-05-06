@@ -5185,6 +5185,7 @@ span.close_google:hover{
 .casinos-info__list > li {
     position: relative;
     width: 100%;
+    min-height: 100px;
     padding: 10px;
     border-bottom: 1px solid #01152d;
     background-color: #032347;
@@ -7354,7 +7355,7 @@ span.close_google:hover{
         position: relative;
         top: auto;
         right: auto;
-        width: 30%;
+        width: 35%;
         text-align: center;
     }
     .casinos-info__logo a {
