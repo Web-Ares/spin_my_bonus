@@ -5116,8 +5116,7 @@ span.close_google:hover{
 .casinos-info {
     position: relative;
     width: 300px;
-    margin-bottom: 48px;
-    margin-right: 1px;
+    margin: 0 auto 48px;
 }
 .casinos-info header {
     display: block;
