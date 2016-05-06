@@ -5115,8 +5115,8 @@ span.close_google:hover{
 /* ------------ casinos-info ------------ */
 .casinos-info {
     position: relative;
-    width: 300px;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
+    margin-right: 1px;
 }
 .casinos-info header {
     display: block;
@@ -7225,9 +7225,6 @@ span.close_google:hover{
     /*-------------- /game-box-----------------*/
 
     /* ------------- casinos-info -------------- */
-    .casinos-info {
-        width: 738px;
-    }
     .casinos-info_text{
         background: #032954;
         margin-bottom: 64px;
@@ -9256,7 +9253,6 @@ span.close_google:hover{
         margin-bottom: 28px;
         margin-right: 1px;
         min-width: 534px;
-        width: 100%;
     }
     .casinos-info > header {
         display: block;
