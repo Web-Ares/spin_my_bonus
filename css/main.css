@@ -7283,6 +7283,9 @@ span.close_google:hover{
         font-size: 14px;
         background-color: #032954;
     }
+    .casinos-info__mobile{
+        display: none;
+    }
     .casinos-info__list > li.light {
         background-color: #000;
     }
