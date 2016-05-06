@@ -7360,6 +7360,7 @@ span.close_google:hover{
     }
     .casinos-info__logo a {
         display: inline-block;
+        font-weight: 600;
     }
     .casinos-info__list > .casinos-info__head  > .casinos-info__logo {
         margin-left: 0;
